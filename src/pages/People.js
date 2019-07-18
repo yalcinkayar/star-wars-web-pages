@@ -13,7 +13,6 @@ class PeoplePage extends React.Component {
         const response = await axios.get('https://swapi.co/api/people/?format=json');
       
         this.setState({people: response.data.results});
-      //  console.log(response.data);
     }
 
     render() {

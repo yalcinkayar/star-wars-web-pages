@@ -11,7 +11,6 @@ class FilmsPage extends React.Component {
     async componentDidMount() {
         const response = await axios.get('https://swapi.co/api/films/?format=json');
         this.setState({films: response.data.results});
-       // console.log(response.data.results);
     }
 
     render() {

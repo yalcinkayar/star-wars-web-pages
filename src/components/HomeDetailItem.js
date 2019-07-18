@@ -65,7 +65,6 @@ class HomeDetailItemPage extends React.Component {
     render() {
        const {data} = this.state;
        const {urls} = this.state;
-       console.log(urls);
         return(
             <div style={{border: '1px solid #000',color:'black',padding:50,height:350,width:820,marginTop:10,marginLeft:200}}>
                 <h1>Star Details</h1>

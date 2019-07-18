@@ -7,12 +7,9 @@ class FetchData extends React.Component {
     }
     async componentDidMount(){
         const response = await axios.get(this.props.val);
-        this.setState({ data: response.data.title }) 
-        //console.log(this.state.data);
+        this.setState({ data: response.data.title }); 
     }
     render(){
-        //const {data} = this.props;
-      //  console.log({data});
         return(
             <div>
                      {this.state.data}

@@ -8,7 +8,6 @@ class FetchDataPeople extends React.Component {
     async componentDidMount(){
         const response = await axios.get(this.props.val);
         this.setState({ data: response.data.name });
-       // console.log(response.data.name);
     }
     render(){
         return(
